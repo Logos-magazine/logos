@@ -204,13 +204,20 @@ a {
 /* Services section styles */
 .expandable-div {
   border: 1px solid grey;
-  border-radius: 3px;
+  border-radius: 12px;
   padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 
 .hidden-content {
   display: none;
+}
+
+.expanddiv {
+	width: 50%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	border-radius: 12px;
 }
 
 .services {
