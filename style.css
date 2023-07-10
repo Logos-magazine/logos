@@ -205,6 +205,8 @@ a {
 .services {
   padding: 5rem 0;
   text-align: center;
+  height: 30px;
+  width: 800px;
 }
 
 .services h2 {
