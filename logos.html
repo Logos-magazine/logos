@@ -173,6 +173,12 @@
 		  <li>
 			  <h3>نسكيات وروحيات</h3>
 			  <p>مرحبًا بكم فى مجلة لوجوس</p>
+			  <div class="expandable-div" onclick="expandDiv()">
+  				<p>Click me to expand</p>
+  				<div class="hidden-content">
+    					<p>This is the hidden content</p>
+  				</div>
+			  </div>
 		  </li>
 	  </ul>
 	  <ul>
@@ -258,6 +264,19 @@
     message => alert(message)
     );
   }
+</script>
+<script>
+	function expandDiv() {
+  const div = document.querySelector('.expandable-div');
+  const content = div.querySelector('.hidden-content');
+  if (content.style.display === 'none') {
+    content.style.display = 'block';
+    div.style.height = 'auto';
+  } else {
+    content.style.display = 'none';
+    div.style.height = '50px'; // set the initial height here
+  }
+}
 </script>
 	
   <footer class="fady">
