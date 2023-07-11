@@ -22,19 +22,19 @@ let updateTimer;
 
 const music_list = [
     {
-        img : 'images/s1.png',
+        img : 'images/logo.png',
         name : 'نسجد لاسم الثالوث',
         artist : 'فريق إلمس إدينا',
-        music : 's1.mp3'
+        music : 'music/s1.mp3'
     },
     {
-        img : 'images/s2.jpg',
+        img : 'images/logo.jpg',
         name : 'الساكن فى ستر العلىّ',
         artist : 'القس موسى رشدى',
-        music : 's2.mp3'
+        music : 'music/s2.mp3'
     },
     {
-        img : 'images/music.png',
+        img : 'images/logo.png',
         name : 'اختبرتني إلهى',
         artist : 'مونيكا چورچ',
         music : 'music/music.mp3'
