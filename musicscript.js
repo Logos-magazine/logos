@@ -23,12 +23,18 @@ let updateTimer;
 const music_list = [
     {
         img : 'images/logo.png',
+        name : 'لحن أونضوس',
+        artist : 'المعلم إبراهيم عياد',
+        music : 'music/ondos.mp3'
+    },
+    {
+        img : 'images/logo.png',
         name : 'نسجد لاسم الثالوث',
         artist : 'فريق إلمس إدينا',
         music : 'music/s1.mp3'
     },
     {
-        img : 'images/logo.jpg',
+        img : 'images/logo.png',
         name : 'الساكن فى ستر العلىّ',
         artist : 'القس موسى رشدى',
         music : 'music/s2.mp3'
@@ -40,7 +46,7 @@ const music_list = [
         music : 'music/music.mp3'
     },
     {
-        img : 'images/s3.jpg',
+        img : 'images/logo.png',
         name : 'بابا يسوع فى السماوات',
         artist : 'بولس ملاك',
         music : 'music/s3.mp3'
