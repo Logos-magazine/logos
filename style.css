@@ -202,7 +202,7 @@ a {
 }
 
 /* Services section styles */
-.services {
+/*.services {
   padding: 5rem 0;
   text-align: center;
 }
@@ -210,7 +210,7 @@ a {
 .services h2 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  font-family: 'Reem Kufi Fun', sans-serif;
+  font-family: 'Aref Ruqaa', serif;
 }
 
 .services ul {
@@ -220,6 +220,7 @@ a {
   flex-wrap: wrap;
   list-style: none;
   margin-top: 2rem;
+  font-family: 'Aref Ruqaa', serif;
 }
 
 .services li {
@@ -229,7 +230,7 @@ a {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
-  font-family: 'Reem Kufi Fun', sans-serif;
+  font-family: 'Aref Ruqaa', serif;
 }
 
 .services li:hover {
@@ -240,16 +241,16 @@ a {
 .services li h3 {
   font-size: 1.8rem;
   margin-top: 1rem;
-  font-family: 'Reem Kufi Fun', sans-serif;
+  font-family: 'Aref Ruqaa', serif;
 }
 
 .services li p {
   font-size: 1.2rem;
   margin-top: 1rem;
   padding: 1rem;
-  font-family: 'Reem Kufi Fun', sans-serif;
+  font-family: 'Aref Ruqaa', serif;
 }
-
+*/
 
 
 
@@ -262,7 +263,8 @@ a {
     	margin: 20px;
     	overflow: hidden;
     	transition: height 0.5s ease-out;
-    	height: 40px;
+    	height: 60px;
+	font-family: 'Aref Ruqaa', serif;
     	}
     	
     	/* تحديد خصائص العنوان */
