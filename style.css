@@ -222,9 +222,10 @@ a {
 
 .services {
   padding: 5rem;
-  height: 95vh;
+  height: 50vh;
   margin: 30px;
   text-align: center;
+  text-decoration: none;
 }
 
 .services h2 {
