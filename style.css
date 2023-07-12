@@ -200,8 +200,7 @@ a {
 /* Services section styles */
 /*.expandable-div {
   border: 1px solid grey;
-  border-radius: 12px;
-  padding: 10px;
+  border-radius: 12px;  padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
@@ -220,56 +219,74 @@ a {
   font-family: 'Reem Kufi Fun', sans-serif;
 }*/
 
-.services {
-  padding: 5rem;
-  height: 95vh;
-  margin: 20px;
-  text-align: center;
-  text-decoration: none;
-}
+/* تحديد خصائص الصندوق */
+    	.box {
+    	background-color: #fff;
+    	border-radius: 7px;
+    	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
+    	margin: 20px;
+    	overflow: hidden;
+    	transition: height 0.5s ease-out;
+    	height: 60px;
+    	}
+    	
+    	/* تحديد خصائص العنوان */
+    	.header {
+    	display: flex;
+    	align-items: center;
+    	justify-content: space-between;
+    	padding: 10px;
+    	background-color: #eee;
+    	cursor: pointer;
+    	}
+    	
+    	/* تحديد خصائص الزر */
+    	.header button {
+    	background-color: transparent;
+    	border: none;
+    	outline: none;
+    	font-size: 20px;
+    	font-weight: bold;
+    	cursor: pointer;
+    	}
+    	
+    	/* تحديد خصائص المحتوى */
+    	.content {
+    	padding: 10px;
+    	background-color: #f1f1f1;
+    	transform-origin: top;
+    	transform: scaleY(0);
+    	transition: transform 0.5s ease-out;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+    	}
+    	
+    	/* تحديد خصائص الروابط */
+    	.content a {
+    	font-size: 16px;
+    	margin: 10px;
+    	color: #333;
+    	text-decoration: none;
+    	cursor: pointer;
+    	transform: scale(0);
+    	transition: transform 0.5s ease-out;
+    	}
+    	
+    	/* تحديد خصائص الروابط عند الانتقال */
+    	.box.expanded {
+    	height: 200px;
+    	}
+    	
+    	.box.expanded .content {
+    	transform: scaleY(1);
+    	}
+    	
+    	.box.expanded .content a {
+    	transform: scale(1);
+	}
 
-.services h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  font-family: 'Reem Kufi Fun', sans-serif;
-}
-
-.services ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  list-style: none;
-  margin-top: 3rem;
-}
-
-.services li {
-  width: 300px;
-  margin: 2rem;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
-  font-family: 'Reem Kufi Fun', sans-serif;
-}
-
-.services li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-.services li h3 {
-  font-size: 1.8rem;
-  margin-top: 1rem;
-  font-family: 'Reem Kufi Fun', sans-serif;
-}
-
-.services li p {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  padding: 1rem;
-  font-family: 'Reem Kufi Fun', sans-serif;
-}
 
 /* Contact section styles */
 /*.contact {
