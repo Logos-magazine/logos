@@ -223,7 +223,7 @@ a {
 .services {
   padding: 5rem;
   height: 95vh;
-  margin: 30px;
+  margin: 20px;
   text-align: center;
   text-decoration: none;
 }
@@ -240,12 +240,12 @@ a {
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .services li {
   width: 300px;
-  margin: 7rem;
+  margin: 2rem;
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
