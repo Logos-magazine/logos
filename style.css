@@ -28,8 +28,8 @@
 	float: right;
 	font-size: 22px;
 	line-height: 20px;
-  height:100%;
-  width: 100%;
+        height:100%;
+        width: 100%;
 	cursor: pointer;
 	transition: 4s;
 	}
@@ -257,12 +257,12 @@ a {
 /* تحديد خصائص الصندوق */
     	.box {
     	background-color: #fff;
-    	border-radius: 7px;
+    	border-radius: 12px;
     	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
     	margin: 20px;
     	overflow: hidden;
     	transition: height 0.5s ease-out;
-    	height: 60px;
+    	height: 40px;
     	}
     	
     	/* تحديد خصائص العنوان */
@@ -272,9 +272,10 @@ a {
 	text-align: center;
     	justify-content: space-between;
     	padding: 10px;
-    	background-color: #eee;
+    	background-color: #fff;
 	font-family: 'Aref Ruqaa', serif;
     	cursor: pointer;
+	text-align: right;
     	}
     	
     	/* تحديد خصائص الزر */
@@ -285,7 +286,6 @@ a {
     	font-size: 20px;
     	font-weight: bold;
     	cursor: pointer;
-	text-align: center;
     	}
     	
     	/* تحديد خصائص المحتوى */
