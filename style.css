@@ -273,6 +273,7 @@ a {
     	justify-content: space-between;
     	padding: 10px;
     	background-color: #eee;
+	font-family: 'Aref Ruqaa', serif;
     	cursor: pointer;
     	}
     	
@@ -295,6 +296,7 @@ a {
     	transform: scaleY(0);
     	transition: transform 0.5s ease-out;
     	display: flex;
+	font-family: 'Gulzar', serif;
     	flex-direction: column;
     	justify-content: center;
     	align-items: center;
