@@ -3,9 +3,16 @@ body {
   background-image: url("./images/Webpage backgroung.png");
   background-color: brown;
 }
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
 /*style of articles background*/
 .article {
   border-radius: 7px;
   border-shadow: 3px;
   margin: 40px;
+  text-align: right;
 }
