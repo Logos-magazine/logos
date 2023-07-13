@@ -194,7 +194,7 @@ h2 {
 /*style of articles background*/
 .article {
   border-radius: 7px;
-  border-shadow: 3px;
+  box-shadow: 5px 5px black;
   margin: 40px;
   text-align: right;
 }
