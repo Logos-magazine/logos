@@ -29,9 +29,9 @@ const music_list = [
     },
     {
         img : 'images/logo.png',
-        name : 'مرد الابركسيس الكبير',
+        name : 'لحن أنضوس',
         artist : 'المعلم إبراهيم عياد',
-        music : 'music/music2.mp3'
+        music : 'music/ondos.mp3'
     },
     {
         img : 'images/logo.png',
