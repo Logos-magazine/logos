@@ -1,421 +1,421 @@
-/* Global styles */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+body {
+    align-items: center;
+    align-content: center;
+    background-image: url("BC.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    
 }
 
-.alert {
-	padding: 20px;
-	background-color: #f44336;
-	color: white;
-	border-radius: 7px;
-	transition: opacity 2s ease-in-out;
-	opacity: 0;
-	position: fixed;
-	top: 10px;
-	right: 10px;
-	}
-	
-	.alert.show {
+#splash {
+	position:absolute;
+	top: 0;
+	left: 0;
+	background:#6236FF !important;
+	height: 100vh;
+	width: 100%;
+	z-index: 9999;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	opacity: 1;
-	}
-	
-	.closebtn {
-	margin-left: 15px;
-	color: white;
-	font-weight: bold;
-	float: right;
-	font-size: 22px;
-	line-height: 20px;
-        height:100%;
-        width: 100%;
-	cursor: pointer;
-	transition: 4s;
-	}
-	
-	.closebtn:hover {
-	color: black;
-	}
+	transition: opacity 1s;
+}
+
+#splash img {
+	width: 300px;
+}
+
+#splash.fade {
+	opacity: 0;
+}
+
+.br {
+  border-top-style: double;
+  border-bottom-style: none;
+  width: 80%;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+  background-color: #55ACEE;
+}
+
+.bg-img {
+    width: 100%;
+    height: 50%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 80px;
+}
+
+.home {
+    background: url("bg2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    height: 100vh;
+    padding-top: 125px;
+    border-radius: 30px;
+}
+
+.container {
+    margin: auto;
+    width: 450px;
+    height: 275px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .4);   
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: Lora;
+    background: #b6604f;
+    color: #f1f1f1;
+    font-size: 27px;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+    box-shadow: 5px #ffa7a7;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    inset: 0;
+    filter: blur(10px);
+    margin: -20px;
+}
+
 
 .logo {
-  height: 50px;
-  width: 50px;
-  boarder-radius: 7px;
+    border-radius: 30px;
+    width: 50px;
+    box-shadow: 5px #ffa7a7;
+    margin-right: 0px;
+    margin-top: 15px;
+    margin-left: 20px;
+    float: left;
+    box-shadow: 5px 5px 5px #4b0000;
 }
 
-.articles {
-  background-color: white;
-  text-alignment: center;
-  border-radius: 7px;
-}
+ /* Add a black background color to the top navigation */
+ .topnav {
+    background-color: #ff0000;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    display: block;
+    color: #4b0000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ffa7a7;
+    color: black;
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  } 
 
-section a {
-  text-decoration: none;
-}
+   /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  } 
 
-section h3 {
-  text-decoration: none;
-}
 
-section p {
-  text-decoration: none;
-}
 
-nav ul .nav-item {
-  text-align: right;
-}
-
-  .navbar {
-    background-color: #fff;
-    position: relative;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
-  }
-  .navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-  }
-  .navbar-nav .nav-link {
-    font-size: 18px;
-    font-weight: normal;
-    color: #333;
-    padding: 10px 20px;
-  }
-  .navbar-nav .nav-link:hover {
-    color: #1abc9c;
-  }
-  .navbar-toggler {
-    border: none;
-    outline: none;
-    color: #333;
-  }
-  .navbar-toggler:hover {
-    color: #1abc9c;
-  }
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
-  @media only screen and (max-width: 767px) {
-
-  .navbar-nav {
+section {
+    text-align: center;
+    box-shadow: 1cm;
+    border:2px;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-color: rgb(116, 223, 255);
+    border-radius: 50px;
+    /*border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    */border-style: double solid;
+    border-width: thick;
+    padding: 50px;
+    background-color: rgb(223, 251, 255);
+    width: 20%;
+    box-shadow: 5px 5px 5px 0px rgba(187, 104, 255, 0.527);
+    float: left;
+    align-items: center;
+    margin: 3%;
+}
+
+.header {
+    overflow: hidden;
+    background-color: red;
+    padding: 20px 10px;
   }
-  .navbar-nav .nav-link {
-    color: #333;
+  
+  .logo {
+    width: 70px;
+    border-radius: 60px;
   }
-  .navbar-nav .dropdown-menu {
-    background-color: #fff;
-    border: none;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
+
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 15px;
+    border-radius: 40px;
   }
-  .navbar-nav .dropdown-menu .dropdown-item {
-    color: #333;
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
   }
-  .navbar-nav .dropdown-menu .dropdown-item:hover {
-    color: #1abc9c;
-    background-color: #fff;
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: #ddd;
+    color: black;
   }
+  
+  /* Style the active/current link*/
+  .header a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+
+header {
+    text-align: center;
+    box-shadow: 1cm;
+    border:2px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-spacing: 30px;
+    border-bottom-width: 40px;
+    border-style: double solid;
+    border-width: thick;
+    padding-bottom: 30px;
+    background-color: red;
+    padding: 20px;
+    box-shadow: 10px 10px 0px rgb(39, 10, 10);
 }
 
-.hero h1 {
-  font-size: 400px;
-}
-
-body {
-  font-family: 'Reem Kufi Fun', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  text-alignment: right;
-  background-color: lightgrey;
-  background-image: url("images/Website backgroung (3).png");
-  height: 100%;
-  width: 100%;
-}
-
-.logo {
-  border-radius: 7px;
-}
-
-.recent {
-  opacity: 1;
-  height: 300px;
-  width: 270px;
-}
-
-audio {
-  height: 10%;
-  width: 40%;
-  display: fixed;
-}
-
-a {
-  text-decoration: none;
-  color: #333;
-}
-
-/* Hero section styles */
-.hero {
-  background-color: grey;
-  margin-top: 1px;
-  background-size: cover;
-  background-position: center;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
-  background-image: url("images/bg2.jpeg");
-  height: 100%;
-  width: 100%;
-}
-
-.hero h1 {
-  font-size: 90px;
-  margin-bottom: 1rem;
-  font-family: 'LaylaThuluthRegular';
-}
-
-.hero p {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  font-family: 'Amiri', serif;
-}
-
-.hero a {
-  display: block;
-  background-color: #ffffff;
-  color: #24292e;
-  font-size: 1.2rem;
-  padding: 0.75rem 1.5rem;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  font-family: 'Lemonada', cursive;
-}
-
-.hero a:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Services section styles */
-.services {
-  padding: 5rem 0;
-  text-align: center;
-}
-
-.services .h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  font-family: 'Reem Kufi Fun', sans-serif;
-}
-
-.services ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  list-style: none;
-  margin-top: 2rem;
-  font-family: 'Aref Ruqaa', serif;
-}
-
-.services li {
-  width: 300px;
-  margin: 1rem;
-  background-color: #ffffff;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
-  font-family: 'Aref Ruqaa', serif;
-}
-
-.services li:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-.services li h3 {
-  font-size: 1.8rem;
-  margin-top: 1rem;
-  font-family: 'Aref Ruqaa', serif;
-}
-
-.services li p {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  padding: 1rem;
-  font-family: 'Aref Ruqaa', serif;
-}
-
-
-
-
-/* تحديد خصائص الصندوق */
-    	.box {
-    	background-color: #fff;
-    	border-radius: 12px;
-    	box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.1);
-    	margin: 20px;
-    	overflow: hidden;
-    	transition: height 0.5s ease-out;
-    	height: 60px;
-	font-family: 'Aref Ruqaa', serif;
-    	}
-    	
-    	/* تحديد خصائص العنوان */
-    	.header {
-    	display: flex;
-    	align-items: center;
-	text-align: center;
-    	justify-content: space-between;
-    	padding: 10px;
-    	background-color: #fff;
-	font-family: 'Aref Ruqaa', serif;
-    	cursor: pointer;
-	text-align: right;
-    	}
-    	
-    	/* تحديد خصائص الزر */
-    	.header button {
-    	background-color: transparent;
-    	border: none;
-    	outline: none;
-    	font-size: 20px;
-    	font-weight: bold;
-    	cursor: pointer;
-    	}
-    	
-    	/* تحديد خصائص المحتوى */
-    	.content {
-    	padding: 10px;
-    	background-color: #f1f1f1;
-    	transform-origin: top;
-    	transform: scaleY(0);
-    	transition: transform 0.5s ease-out;
-    	display: flex;
-	font-family: 'Gulzar', serif;
-    	flex-direction: column;
-    	justify-content: center;
-    	align-items: center;
-    	}
-    	
-    	/* تحديد خصائص الروابط */
-    	.content a {
-    	font-size: 16px;
-    	margin: 10px;
-    	color: #333;
-    	text-decoration: none;
-    	cursor: pointer;
-    	transform: scale(0);
-    	transition: transform 0.5s ease-out;
-    	}
-    	
-    	/* تحديد خصائص الروابط عند الانتقال */
-    	.box.expanded {
-    	height: 200px;
-    	}
-    	
-    	.box.expanded .content {
-    	transform: scaleY(1);
-    	}
-    	
-    	.box.expanded .content a {
-    	transform: scale(1);
-	}
-
-
-
-
-/* Contact section styles */
-.contact {
-  padding: 50px;
-  text-align: center;
-  font-family: 'El Messiri', sans-serif;
-}
-
-.contact h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  font-family: 'El Messiri', sans-serif;
-}
-
-.contact form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: 'El Messiri', sans-serif;
-}
-
-.contact label {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-  font-family: 'El Messiri', sans-serif;
-}
-
-.contact input,
-.contact textarea {
-  width: 50%;
-  padding: 0.5rem;
-  margin-top: 0.5rem;
-  border: 1px solid black;
-  border-radius: 7px;
-  text-alignment: center;
-  alignment-items: center;
-  font-family: 'El Messiri', sans-serif;
-}
-
-.contact button {
-  background-color: grey;
-  color: #24292e;
-  font-size: 1.2rem;
-  padding: 0.75rem 1.5rem;
+.but1 {
+  border-radius: 4px;
+  background-color: #f4511e;
   border: none;
-  border-radius: 5px;
-  margin-top: 1rem;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
   cursor: pointer;
-  transition: all 0.3s ease;
-  margin-bottom: 100px;
-  padding-bottom: 100px;
-  font-family: 'El Messiri', sans-serif;
+  margin: 5px;
+  margin-top: 60px;
 }
 
-.contact button:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+.but34 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-/* Media queries */
+.but34 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.but34:hover span {
+  padding-right: 25px;
+}
+
+.but34:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+ /* Style all font awesome icons */
 
 footer {
-  background-color: #333;
-  color: #000;
-  padding: 20px;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
+  margin: 0%;
+  padding: 3%;
+  border-radius: 20px;
+ }
 
-footer .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-footer p {
-  margin: 0;
-  color: grey;
-}
+  .fa {
+    padding: 10px;
+    margin: 30px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px  #2c2c2c;
+    margin: 20px;
+    border: 5px 5px 5px #ff0000;
+    border-color: #ff0000;
+    border-style: double;
+  }
 
-/*.fady {
-  background-color: grey;
-}*/
+/* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
 
-.py {
-  color: white;
-  text-align: center;
-  font-size: 10px;
-}
+/* Set a specific color for each brand */
+
+/* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+/* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: rgb(255, 130, 130);
+  }
+
+  footer {
+    background-color: #ffaaaa;
+  }
+
+
+  .center {
+    position: fixed;
+    top: 90%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  .table {
+    width: 95%;
+    height: 40px;
+    background-color: #ec0928;
+    border-radius: 10px;
+  }
+  .table .monitor-wrapper {
+    background: #050321;
+    width: 93%;
+    height: 35px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  .table .monitor-wrapper .monitor {
+    width: 86%;
+    height: 30px;
+    background-color: #344151;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: inset 0px 5px 10px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+  }
+  .table .monitor-wrapper .monitor p {
+    font-family: "Amiri", monospace;
+    font-size: 25px;
+    /*position: relative;*/
+    top: -25px;
+    bottom: 90px;
+    position: absolute;
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+    animation: move 40s infinite linear;
+    color: #EBB55F;
+  }
+  
+  @keyframes move {
+    from {
+      left: -2800px;
+    }
+    to {
+      left: 800px;
+    }
+  }
