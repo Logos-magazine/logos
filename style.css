@@ -413,9 +413,9 @@ footer {
   
   @keyframes move {
     from {
-      left: -2800px;
+      left: -7800px;
     }
     to {
-      left: 800px;
+      left: 1000px;
     }
   }
