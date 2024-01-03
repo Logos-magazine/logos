@@ -239,7 +239,6 @@ a.active,a:hover{
   }
   nav ul li a{
     font-size: 16px;
-    text-decoration: none;
   }
 }
 @media (max-width: 858px){
@@ -274,6 +273,16 @@ a.active,a:hover{
     right: -4.1%;
   }
 }
+
+.svg {
+    display: block;
+    font: 20.5em 'Amiri';
+    /*width: 960px;
+    height: 300px;*/
+    width: 60%;
+    margin: 0 auto;
+}
+
 
 svg {
     display: block;
