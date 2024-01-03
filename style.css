@@ -11,6 +11,12 @@ body {
 audio {
 	display: none;
 }
+
+.be {
+        border-radius: 20px;
+	background-color: darkgreen;
+	box-shadow: 2px 2px darkred;
+}
 /*.nav {
   position: fixed;
   top: 0;
