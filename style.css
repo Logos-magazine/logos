@@ -740,7 +740,7 @@ footer {
   }
   .table .monitor-wrapper .monitor p {
     font-family: "Amiri", monospace;
-    font-size: 25px;
+    font-size: 20px;
     /*position: relative;*/
     top: -25px;
     bottom: 90px;
@@ -748,7 +748,7 @@ footer {
     display: inline-block;
     align-items: center;
     align-content: center;
-    animation: move 40s infinite linear;
+    animation: move 47s infinite linear;
     color: #EBB55F;
   }
   
