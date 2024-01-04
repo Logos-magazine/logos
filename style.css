@@ -251,7 +251,7 @@ a.active,a:hover{
     position: fixed;
     width: 70%;
     height: 80vh;
-    background-image: url("logosbg.png");
+    background-image: url("images/logosbg.png");
     background-style: cover;
     background-style: no-repeat;
     margin-right: 30%;
