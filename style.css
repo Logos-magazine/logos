@@ -12,11 +12,6 @@ audio {
 	display: none;
 }
 
-.be {
-        border-radius: 20px;
-	background-color: darkgreen;
-	box-shadow: 2px 2px darkred;
-}
 /*.nav {
   position: fixed;
   top: 0;
@@ -245,6 +240,7 @@ a.active,a:hover{
   }
   nav ul li a{
     font-size: 16px;
+    text-decoration: none;
   }
 }
 @media (max-width: 858px){
@@ -255,7 +251,9 @@ a.active,a:hover{
     position: fixed;
     width: 70%;
     height: 80vh;
-    background: darkred;
+    background-image: url("logosbg.png");
+    background-style: cover;
+    background-style: no-repeat;
     margin-right: 30%;
     top: 100px;
     border-radius: 20px;
@@ -270,6 +268,7 @@ a.active,a:hover{
   }
   nav ul li a{
     font-size: 20px;
+	  text-decoration: none;
   }
   a:hover,a.active{
     background: none;
@@ -385,7 +384,7 @@ svg {
   align-items: center;
   border-radius: 10px;
   margin-bottom: 2px;
-  margin-top: 200%;
+  margin-top: 300%;
   padding: 5px;
   background-color: #55ACEE;
 }
