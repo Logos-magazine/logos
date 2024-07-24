@@ -182,7 +182,7 @@ nav{
   margin-top: 10px;
   margin-bottom: 30px;
   margin-left: 5px;
-  margin-right: 5px;
+  margin-right: -5px;
   border-radius: 5px;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
@@ -252,7 +252,7 @@ a.active,a:hover{
     position: fixed;
     width: 70%;
     height: 80vh;
-    background-color: darkgreen;
+    background-color: whitecyan;
     margin-right: 30%;
     top: 100px;
     border-radius: 20px;
@@ -389,7 +389,7 @@ svg {
 }
 
 .bg-img {
-    width: 100%;
+    width: 30%;
     height: 50%;
     border-radius: 7px;
     padding-left: 0;
@@ -404,7 +404,7 @@ svg {
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: cover;
-    height: 100vh;
+    height: 40vh;
     padding-top: 125px;
     border-radius: 30px;
 }
@@ -457,7 +457,7 @@ svg {
     width: 50px;
     box-shadow: 5px #ffa7a7;
     margin-right: 0px;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 26px;
     float: left;
     /*box-shadow: 5px 5px 5px #4b0000;*/
