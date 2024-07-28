@@ -2,8 +2,7 @@ body {
     align-items: center;
     align-content: center;
     background-image: url("images/background.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size:cover;
     
 }
@@ -111,7 +110,7 @@ body {
     width: 50px;
     box-shadow: 5px #ffa7a7;
     margin-right: 0px;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-left: 20px;
     float: left;
     box-shadow: 5px 5px 5px #4b0000;
@@ -175,7 +174,7 @@ body {
     }
     section {
       margin-right: 1000px;
-      margin-bottom: 700px;
+      margin-bottom: 2000px;
     }
   } 
 
