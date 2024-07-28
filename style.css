@@ -54,7 +54,7 @@ body {
 }
 
 .home {
-    background: url("background.jpg");
+    background: url("images/background.jpg");
     /* background-repeat: no-repeat; */
     background-attachment: scroll; 
     background-size: cover;
