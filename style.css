@@ -1,8 +1,9 @@
 body {
     align-items: center;
     align-content: center;
-    background-image: url("images/background.jpg");
-    background-attachment: scroll;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size:cover;
     
 }
@@ -53,7 +54,7 @@ body {
 }
 
 .home {
-    background: url("images/background.jpg");
+    background: url("background.jpg");
     /* background-repeat: no-repeat; */
     background-attachment: scroll; 
     background-size: cover;
