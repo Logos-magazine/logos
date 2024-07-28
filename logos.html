@@ -1,14 +1,12 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Aref+Ruqaa&family=Eczar:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="javascript" href="script.js">
     <title>logos-magazine</title>
@@ -17,39 +15,23 @@
 
 
     <a href="Home.html">
-        <img class="logo" src="images/CL.png"/>
+        <img class="logo" src="CL.png"/>
     </a>
-   <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-    <!--<img class="logo" src="images/CL.png" alt="website logo"/>-->
-      <ul>
-        <!--<li><a class="active" href="#"><li class=""></li></a></li>-->
-        <li><a href="logos.html">الصفحة الرئيسية</a></li>
-        <li><a href="music.html">استمع</a></li>
-        <li><a href="issues.html">أعداد المجلة</a></li>
-        <li><a href="who.html">معلومات عنا</a></li>
-      </ul>
-   </nav>
-    
-
-      <audio controls autoplay>
-         <source src="music/جلست وحدي اناجيك(MP3_160K).mp3" type="audio/mpeg">
-      </audio>
-
-            <div class="bg-img">
-                <img class="bg-img" src="images/bg.jpg"/>
+        <header>
+            <div class="topnav" id="myTopnav">
+                <a href="logos.html" class="active">الصفحة الرئيسية</a>
+                <a href="music.html">استمتع</a>
+                <a href="#contact">تواصل معنا</a>
+                <a href="who.html">معلومات عنا</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
             </div>
-        
-  <center>
-        <br>
-        <br>
-
-      <div class="home">
+        </header>
+    
+        <div class="home">
             <div class="container">
-                <button class="but34"><span>عن مجلة لوجوس</span></button>
+                <button class="but34"><span>مقالات حرة في الْمِجَلَّةُ </span></button>
             </div>
         </div>
       
@@ -63,95 +45,94 @@
         <br>
         <br>
         
-        <a href="pdf/مجلة لوجوس- عدد 7 السابع.pdf"><section>
+        <a href="pdfs/.pdf"><section>
             <div class="sec">
-                <img class="issue" src="Logosseventhissue.png" alt="issue7"/>
-                <h1>العدد السابع 2024</h1>
+                <img class="issue" src="Logosseventhissue.png" alt="issue"/>
+                <h1>العدد السابع</h1>
             </div>
         </section></a>
         
         <a href="pdfs/.pdf"><section>
             <div class="sec">
-                <img class="issue" src="Logossixthissue.png" alt="issue6"/>
-                <h1>العدد السادس 2024</h1>
+                <img class="issue" src="Logossixthissue.png" alt="issue"/>
+                <h1>العدد السادس</h1>
             </div>
         </section></a>
         
         <a href="pdfs/.pdf"><section>
             <div class="sec">
-                <img class="issue" src="logosfifthissue.png" alt="issue5"/>
+                <img class="issue" src="logosfifthissue.png" alt="issue"/>
                 <h1>العدد الخامس</h1>
             </div>
         </section></a>
         
-        <a href="pdf/logosforthissue.pdf"><section>
+        <a href="pdfs/.pdf"><section>
             <div class="sec">
-                <img class="issue" src="recent4.png" alt="issue4"/>
-                <h1>العدد الرابع 2023</h1>
+                <img class="issue" src="recent4.png" alt="issue"/>
+                <h1>العدد الرابع</h1>
             </div>
         </section></a>
         
-        <a href="pdfs/Logosthirdissue.pdf"><section>
+        <a href="pdfs/.pdf"><section>
             <div class="sec">
-                <img class="issue" src="issue 3.png" alt="issue3"/>
+                <img class="issue" src="issue 3.png" alt="issue"/>
                 <h1>العدد الثالث</h1>
             </div>
         </section></a>
 
-        <a href="pdfs/logossecissue.pdf"><section>
+        <a href="pdfs/.pdf"><section>
             <div class="sec">
-                <img class="issue" src="issue 2.png" alt="issue2"/>
-                <h1>العدد الثاني 2023</h1>
+                <img class="issue" src="issue 2.png" alt="issue"/>
+                <h1>العدد الثاني</h1>
             </div>
         </section></a>
 
-        <a href="pdfs/logosfirstissue.pdf"><section>
+        <a href="pdfs/.pdf"><section>
             <div class="sec">
-                <img class="issue" src="issue 1.png" alt="issue1"/>
-                <h1>العدد الأول 2023</h1>
+                <img class="issue" src="issue 1.png" alt="issue"/>
+                <h1>العدد الأول</h1>
             </div>
         </section></a>
-        
+
+        <svg viewBox="0 0 960 300">
+            <symbol id="s-text">
+              <text class="text" text-anchor="middle" x="50%" y="80%">مِجَلَّةُ لُوْجُوسْ </text>
+              <text text-anchor="middle" x="50%" y="80%">مِجَلَّةُ لُوْجُوسْ </text>
+              
+            </symbol>
+          
+            <g class = "g-ants">
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+              <use xlink:href="#s-text" class="text-copy"></use>
+            </g>
+          </svg>
+
         <br>
         <br>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <div class="br2"></div>
-    
-         <svg viewBox="0 0 960 300">
-  <symbol id="s-text">
-    <text class="text" text-anchor="middle" x="50%" y="80%">مِجَلَّةُ لُوْجُوسْ </text>
-    <text text-anchor="middle" x="50%" y="80%">مِجَلَّةُ لُوْجُوسْ </text>
-    
-  </symbol>
-
-  <g class = "g-ants">
-    <use xlink:href="#s-text" class="text-copy"></use>
-    <use xlink:href="#s-text" class="text-copy"></use>
-    <use xlink:href="#s-text" class="text-copy"></use>
-    <use xlink:href="#s-text" class="text-copy"></use>
-    <use xlink:href="#s-text" class="text-copy"></use>
-  </g>
-</svg>
-  </center>
-  
-  
+        <!-- <div class="br"></div> -->
         
         <div class="table center">
             <div class="monitor-wrapper center">
               <div class="monitor center">
-                <p>مَرْحَبًا بِكُمْ فِي مِجَلَّة لُوْجُوس______مُتْعَة قِرَاْءَة الْكَلِمَة   كل سنة وحضراتكم بمناسبة العام الجديد 2024  بارك اكليل هذه السنة بصلاحك يارب</p>
+                <p>لآن تَسْتَمِعُوْنَ لِتَرْنِيْمَة جَلَسْتُ وَحْدِي. جَلَسْتُ وَحْدِي أُنَاْجِيْكَ مُتَطَلِّعًا إلَى الْجِبَاْلِ_____مَرْحَبًا بِكُمْ فِي مِجَلَّة لُوْجُوس______مُتْعَة قِرَاْءَة الْكَلِمَة</p>
               </div>
             </div>
         </div>
-  <br><br><br>
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
         <footer>
-          <h3> ©All rights reserved. Logos 2023</h3>
             <div class="media">
                 <!-- Add font awesome icons -->
                 <a href="https://www.facebook.com/profile.php?id=100094448599687&mibextid=ZbWKwL" class="fa fa-facebook"></a>
                 <a href="https://t.me/Logos_magazine" class="fa fa-telegram"></a>
                 <a href="https://youtube.com/@Logos-magazine?si=RMNnfIH7rtvbUodb" class="fa fa-youtube"></a>
                 <a href="https://whatsapp.com/channel/0029VaEKHbO8kyyDDZoZzF3w" class="fa fa-whatsapp"></a>
+                <h3>all rights reserved in logos 2023 &copy;</h3>
             </div>
         </footer>
 
