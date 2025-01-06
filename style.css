@@ -355,7 +355,7 @@ body {
 \*-----------------------------------*/
 
 .hero {
-  background-image: url("../images/hero-bg-bottom.png"),
+  background-image: url("images/hero-bg2.jpg"),
                     url("images/hero-bg2.jpg"),
                     var(--gradient-1);
   background-repeat: no-repeat, no-repeat, no-repeat;
