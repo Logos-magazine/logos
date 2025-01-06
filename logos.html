@@ -1,156 +1,721 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>logos-magazine</title>
+
+  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="javascript" href="script.js">
-    <title>logos-magazine</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Source+Sans+Pro:wght@600;700&display=swap"
+    rel="stylesheet">
 </head>
-<body>
 
+<body id="top">
 
-    <a href="Home.html">
-        <img class="logo" src="images/CL.png"/>
-    </a>
-        <header>
-            <div class="topnav" id="myTopnav">
-                <a href="logos.html" class="active">الصفحة الرئيسية</a>
-                <a href="music.html">استمتع</a>
-                <a href="#contact">تواصل معنا</a>
-                <a href="who.html">معلومات عنا</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </header>
-    
-        <div class="home">
-            <div class="container">
-                <button class="but34"><span>مقالات حرة في الْمِجَلَّةُ </span></button>
-            </div>
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="#">
+        <h1 class="logo">pi logos</h1>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo"></a>
+
+          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
         </div>
-      
 
-            <!-- <div class="bg-img">
-                <img class="bg-img" src="bg.jpg"/>
-            </div>
-         -->
+        <ul class="navbar-list">
 
-        <!-- <div class="br"></div> -->
-        <br>
-        <br>
-        
-        <a href="pdf/مجلة لوجوس- عدد 7 السابع.pdf"><section>
-            <div class="sec">
-                <img class="issue" src="Logosseventhissue.png" alt="issue7"/>
-                <h1>العدد السابع 2024</h1>
-            </div>
-        </section></a>
-        
-        <a href="pdf/.pdf"><section>
-            <div class="sec">
-                <img class="issue" src="images/Logossixthissue.png" alt="issue6"/>
-                <h1>العدد السادس 2024</h1>
-            </div>
-        </section></a>
-        
-        <a href="pdf/.pdf"><section>
-            <div class="sec">
-                <img class="issue" src="images/logosfifthissue.png" alt="issue5"/>
-                <h1>العدد الخامس 2023</h1>
-            </div>
-        </section></a>
-        
-        <a href="pdf/logosforthissue.pdf"><section>
-            <div class="sec">
-                <img class="issue" src="images/recent4.png" alt="issue4"/>
-                <h1>العدد الرابع 2023</h1>
-            </div>
-        </section></a>
-        
-        <a href="pdfs/Logosthirdissue.pdf"><section>
-            <div class="sec">
-                <img class="issue" src="images/recent3.png" alt="issue3"/>
-                <h1>العدد الثالث 2023</h1>
-            </div>
-        </section></a>
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-navbar-link>الصفحة الرئيسية</a>
+          </li>
 
-        <a href="pdf/logossecissue.pdf"><section>
-            <div class="sec">
-                <img class="issue" src="images/recent2.png" alt="issue2"/>
-                <h1>العدد الثاني 2023</h1>
-            </div>
-        </section></a>
+          <li class="navbar-item">
+            <a href="music.html" class="navbar-link" data-navbar-link>استمتع</a>
+          </li>
 
-        <a href="pdf/logosfirstissue.pdf"><section>
-            <div class="sec">
-                <img class="issue" src="images/recent.png" alt="issue1"/>
-                <h1>العدد الأول 2023</h1>
-            </div>
-        </section></a>
+          <li class="navbar-item">
+            <a href="#contact(soon)" class="navbar-link" data-navbar-link>تواصل معنا</a>
+          </li>
 
-<!--         <svg viewBox="0 0 960 300">
-            <symbol id="s-text">
-              <text class="text" text-anchor="middle" x="50%" y="80%">مِجَلَّةُ لُوْجُوسْ </text>
-              <text text-anchor="middle" x="50%" y="80%">مِجَلَّةُ لُوْجُوسْ </text>
-              
-            </symbol>
-          
-            <g class = "g-ants">
-              <use xlink:href="#s-text" class="text-copy"></use>
-              <use xlink:href="#s-text" class="text-copy"></use>
-              <use xlink:href="#s-text" class="text-copy"></use>
-              <use xlink:href="#s-text" class="text-copy"></use>
-              <use xlink:href="#s-text" class="text-copy"></use>
-            </g>
-          </svg> -->
+          <!-- <li class="navbar-item">
+            <a href="#features" class="navbar-link" data-navbar-link>Features</a>
+          </li> -->
 
-        <br>
-        <br>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <!-- <div class="br"></div> -->
-        
-        <div class="table center">
-            <div class="monitor-wrapper center">
-              <div class="monitor center">
-                <p>لآن تَسْتَمِعُوْنَ لِتَرْنِيْمَة جَلَسْتُ وَحْدِي. جَلَسْتُ وَحْدِي أُنَاْجِيْكَ مُتَطَلِّعًا إلَى الْجِبَاْلِ_____مَرْحَبًا بِكُمْ فِي مِجَلَّة لُوْجُوس______مُتْعَة قِرَاْءَة الْكَلِمَة</p>
+          <li class="navbar-item">
+            <a href="who.html" class="navbar-link" data-navbar-link>معلومات عناⲓ</a>
+          </li>
+
+
+
+        </ul>
+
+      </nav>
+
+      <a href="#" class="btn">
+        <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+
+        <span>ⲱϣ ϯⲛⲟⲩ</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle"></p>
+
+            <h2 class="h2 hero-title">ⲉⲩⲟⲩⲛⲟϥ ⲉⲱϣ ⲙⲡⲓⲥⲁϫⲓ</h2>
+
+            <p class="hero-text">
+              ⲡⲓⲗⲟⲅⲟⲥ ⲡⲓⲇⲏⲙⲟⲥⲓⲟⲥ ⲡⲉ ⲡⲓⲇⲏⲙⲟⲥⲓⲟⲥ ⲛⲕⲟⲡⲧⲓⲕⲟⲥ ⲛⲟⲣⲑⲟⲇⲟⲝⲟⲥ ⲉⲃⲟⲗ ϩⲓⲧⲉⲛ ϩⲁⲛϧⲉⲗϣⲓⲣⲓ
+            </p>
+
+            <button class="btn">ⲱϣ</button>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.svg" width="694" height="529" loading="lazy" alt="hero-banner"
+              class="w-100 banner-animation">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="images/mezuad.jpg" width="700" height="532" loading="lazy" alt="about banner"
+              class="w-100 banner-animation">
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title underline">Why Our Agency</h2>
+
+            <p class="about-text">
+              In dictum aliquam turpis lacinia iaculis. Fusce vel malesuada magna. Nulla vel maximus risus. Donec
+              volutpat metus
+              lacinia risus accumsan, ac bibendum libero efficitur. Pellentesque nec nisi sit amet magna tempus
+              hendrerit ut a odio.
+            </p>
+
+            <p class="about-text">
+              Praesent rhoncus commodo tortor, id pulvinar nisl blandit at. Nulla facilisi. Quisque turpis ante,
+              vehicula condimentum
+              arcu.
+            </p>
+
+            <ul class="stats-list">
+
+              <li class="stats-card">
+                <p class="h3 stats-title">9875</p>
+
+                <p class="stats-text">Satisfied Clients</p>
+              </li>
+
+              <li class="stats-card">
+                <p class="h3 stats-title">7894</p>
+
+                <p class="stats-text">Project Lunched</p>
+              </li>
+
+              <li class="stats-card">
+                <p class="h3 stats-title">65</p>
+
+                <p class="stats-text">Years Completed</p>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" id="services">
+        <div class="container">
+
+          <h2 class="h2 section-title underline">Our Speciallization</h2>
+
+          <ul class="service-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="telescope-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title">Strategy & Research</h3>
+
+                <p class="text">
+                  Mauris ut felis malesuada eros varius tristique a at orci. Nulla vulputate, leo sit amet rhoncus
+                  suscipit, enim ex
+                  venenatis ipsum, et porttitor.
+                </p>
+
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+
               </div>
-            </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="desktop-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title">Web Development</h3>
+
+                <p class="text">
+                  Mauris ut felis malesuada eros varius tristique a at orci. Nulla vulputate, leo sit amet rhoncus
+                  suscipit, enim ex
+                  venenatis ipsum, et porttitor.
+                </p>
+
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="globe-outline"></ion-icon>
+                </div>
+
+                <h3 class="h3 title">Web Solution</h3>
+
+                <p class="text">
+                  Mauris ut felis malesuada eros varius tristique a at orci. Nulla vulputate, leo sit amet rhoncus
+                  suscipit, enim ex
+                  venenatis ipsum, et porttitor.
+                </p>
+
+                <button class="card-btn" aria-label="Show More">
+                  <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+
+              </div>
+            </li>
+
+          </ul>
+
         </div>
-        
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </section>
 
-        <footer>
-            <div class="media">
-                <!-- Add font awesome icons -->
-                <a href="https://www.facebook.com/profile.php?id=100094448599687&mibextid=ZbWKwL" class="fa fa-facebook"></a>
-                <a href="https://t.me/Logos_magazine" class="fa fa-telegram"></a>
-                <a href="https://youtube.com/@Logos-magazine?si=RMNnfIH7rtvbUodb" class="fa fa-youtube"></a>
-                <a href="https://whatsapp.com/channel/0029VaEKHbO8kyyDDZoZzF3w" class="fa fa-whatsapp"></a>
-                <h3>all rights reserved in logos 2023 &copy;</h3>
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog">
+        <div class="container">
+
+          <h2 class="h2 section-title underline">أعداد المجلة</h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="banner">
+                  <a href="pdf/logosfirstissue.pdf">
+                    <img src="images/recent.png" width="750" height="350" loading="lazy"
+                      alt="Vestibulum massa arcu, consectetu pellentesque scelerisque." class="img-cover">
+                  </a>
+                </figure>
+
+                <div class="content">
+
+                  <h3 class="h3 title">
+                    <a href="pdf/logosfirstissue.pdf">
+                      العدد الأول 2023
+                    </a>
+                  </h3>
+
+                  <p class="text">
+                    صدر حديثا العدد الأول من مجلة لوجوس
+                  </p>
+
+                  <div class="meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">June, 2023</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="banner">
+                  <a href="pdf/logossecissue.pdf">
+                    <img src="images/recent2.png" width="750" height="350" loading="lazy"
+                      alt="Quisque egestas iaculis felis eget placerat ut pulvinar mi." class="img-cover">
+                  </a>
+                </figure>
+
+                <div class="content">
+
+                  <h3 class="h3 title">
+                    <a href="pdf/logossecissue.pdf">
+                      العدد الثاني
+                    </a>
+                  </h3>
+
+                  <p class="text">
+                    صدر حديثا العدد الثاني من مجلة لوجوس
+                  </p>
+
+                  <div class="meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">August, 2023</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="banner">
+                  <a href="pdf/Logosthirdissue.pdf">
+                    <img src="images/recent3.png" width="750" height="350" loading="lazy"
+                      alt="Fusce sem ligula, imperdiet sed nisi sit amet, euismod posuere." class="img-cover">
+                  </a>
+                </figure>
+
+                <div class="content">
+
+                  <h3 class="h3 title">
+                    <a href="pdf/Logosthirdissue.pdf">
+                      العدد الثالث
+                    </a>
+                  </h3>
+
+                  <p class="text">
+                    صدر حديثا العدد الثالث من مجلة لوجوس
+                  </p>
+
+                  <div class="meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">September, 2023</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="banner">
+                  <a href="pdf/logosforthissue.pdf">
+                    <img src="images/recent4.png" width="750" height="350" loading="lazy"
+                      alt="Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis." class="img-cover">
+                  </a>
+                </figure>
+
+                <div class="content">
+
+                  <h3 class="h3 title">
+                    <a href="pdf/logosforthissue.pdf">
+                      العدد الرابع
+                    </a>
+                  </h3>
+
+                  <p class="text">
+                    صدر حديثا العدد الرابع من مجلة لوجوس
+                  </p>
+
+                  <div class="meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">October, 2023</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="banner">
+                  <a href="pdf/.pdf">
+                    <img src="images/logosfifthissue.png" width="750" height="350" loading="lazy"
+                      alt="Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis." class="img-cover">
+                  </a>
+                </figure>
+
+                <div class="content">
+
+                  <h3 class="h3 title">
+                    <a href="pdf/.pdf">
+                      العدد الخامس
+                    </a>
+                  </h3>
+
+                  <p class="text">
+                    صدر حديثا العدد الخامس من مجلة لوجوس
+                  </p>
+
+                  <div class="meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">December, 2023</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="banner">
+                  <a href="pdf/.pdf">
+                    <img src="images/Logossixthissue.png" width="750" height="350" loading="lazy"
+                      alt="Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis." class="img-cover">
+                  </a>
+                </figure>
+
+                <div class="content">
+
+                  <h3 class="h3 title">
+                    <a href="pdf/.pdf">
+                      العدد السادس
+                    </a>
+                  </h3>
+
+                  <p class="text">
+                    صدر حديثا العدد السادس من مجلة لوجوس
+                  </p>
+
+                  <div class="meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">January, 2024</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="banner">
+                  <a href="pdf/مجلة لوجوس- عدد 7 السابع.pdf">
+                    <img src="images/Logosseventhissue.png" width="750" height="350" loading="lazy"
+                      alt="Donec feugiat mollis nisi in dignissim. Morbi sollicitudin quis." class="img-cover">
+                  </a>
+                </figure>
+
+                <div class="content">
+
+                  <h3 class="h3 title">
+                    <a href="pdf/مجلة لوجوس- عدد 7 السابع.pdf">
+                      العدد السابع
+                    </a>
+                  </h3>
+
+                  <p class="text">
+                    صدر حديثا العدد السابع من مجلة لوجوس
+                  </p>
+
+                  <div class="meta">
+
+                    <div class="publish-date">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="2022-03-07">April, 2024</time>
+                    </div>
+
+                    <button class="comment" aria-label="Comment">
+                      <ion-icon name="chatbubble-outline"></ion-icon>
+
+                      <data value="15">15</data>
+                    </button>
+
+                    <button class="share" aria-label="Share">
+                      <ion-icon name="share-social-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+
+
+          <li class="footer-item">
+
+            <div class="footer-item-icon">
+              <ion-icon name="location"></ion-icon>
             </div>
-        </footer>
 
-        <script>
-            /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            } 
+            <address class="footer-item-link">
+              Arbeen, Suez, Egypt
+            </address>
+
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; 2025 <a href="#" class="copyright-link">Logos magazine</a>. All Right Reserved
+      </p>
+    </div>
+
+  </footer>
 
 
-            setTimeout(() => {
-            document.getElementById('splash').classList.toggle('fade'); }, 2000);
-            //]]
-        </script>
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top  active" aria-label="Go To Top" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyB8vR90IOmeXNbDZTg1n24KH8EB_bm7V1Q",
+    authDomain: "bedemika-7135b.firebaseapp.com",
+    projectId: "bedemika-7135b",
+    storageBucket: "bedemika-7135b.appspot.com",
+    messagingSenderId: "168328554140",
+    appId: "1:168328554140:web:13c414e7971a1e318e6f59"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+</script>
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
