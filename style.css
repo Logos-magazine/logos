@@ -377,13 +377,13 @@ body {
 .hero-title {
   color: var(--white);
   font-size: var(--fs-1);
-  margin-block-end: 20px;
+  margin-block-end: 10px;
 }
 
 .hero-text {
   color: var(--white);
   font-size: var(--fs-8);
-  margin-block-end: 30px;
+  margin-block-end: 20px;
 }
 
 
